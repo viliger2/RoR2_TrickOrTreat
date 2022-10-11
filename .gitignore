@@ -58,3 +58,14 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+*.wav
+RoR2_TrickOrTreat/Assets/candybucket
+RoR2_TrickOrTreat/Assets/Assets
+RoR2_TrickOrTreat/Assets/Assets.manifest
+RoR2_TrickOrTreat/Assets/candybucket.manifest
+RoR2_TrickOrTreat/bin/
+RoR2_TrickOrTreat/obj/project.assets.json
+RoR2_TrickOrTreat/obj/
+RoR2_TrickOrTreatWWise/
+TrickOrTreatUnityProject/
+thunderstore/

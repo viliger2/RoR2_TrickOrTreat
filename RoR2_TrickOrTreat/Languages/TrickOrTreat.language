@@ -1,0 +1,9 @@
+﻿{
+	"strings": {
+		"INTERACTABLE_CANDY_BUCKET_CONTEXT": "Trick or Treat!",
+		"INTERACTABLE_CANDY_BUCKET_NAME": "Candy Bucket",
+		"INTERACTABLE_CANDY_BUCKET_CHAT": "Trick Or Treat!",
+		"INTERACTABLE_CANDY_BUCKET_NEWT_TREAT": "<style=cLunarObjective>Newt</style>: Treat!",
+		"INTERACTABLE_CANDY_BUCKET_NEWT_TRICK": "<style=cLunarObjective>Newt</style>: Trick!"
+	},
+}
