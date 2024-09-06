@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1A713A68-4627-2DD6-7EEF-AB9C07D571E8}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="985987111" Name="Motion Factory Bus"/>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="Volume_SFX"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="2324862943" Type="User" Language="SFX" Hash="{59D32E8A-AC8D-7B1E-A10A-B9F2205A4148}">
+			<ShortName>TrickOrTreat</ShortName>
+			<Path>TrickOrTreat.bnk</Path>
+			<Media>
+				<File Id="516017385" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>cheer.wav</ShortName>
+					<CachePath>SFX/cheer_8E324C96.wem</CachePath>
+				</File>
+				<File Id="653312351" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>trick or treat,wav.wav</ShortName>
+					<CachePath>SFX/trick or treat,wav_8E324C96.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1662665857" Name="viliger_Cheer">
+					<MediaRefs>
+						<MediaRef Id="516017385"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1535940136" Name="viliger_TrickOrTreat">
+					<MediaRefs>
+						<MediaRef Id="653312351"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3673881719" Name="Volume_SFX"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{DDFDAED2-B5C4-AB08-897D-E2D3A9A4048C}</FileHash>
+</SoundBanksInfo>

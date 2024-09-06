@@ -1,4 +1,5 @@
 ﻿using BepInEx;
+using BepInEx.Configuration;
 using R2API;
 using R2API.Networking;
 using R2API.Utils;
@@ -11,19 +12,18 @@ using UnityEngine.Networking;
 
 namespace RoR2_TrickOrTreat
 {
-    [BepInPlugin("com.Viliger.TrickOrTreat", "TrickOrTreat", "1.0.0")]
-    [BepInDependency(R2API.R2API.PluginGUID)]
-    [R2APISubmoduleDependency(new string[]
-    {
-        nameof(SoundAPI),
-        nameof(PrefabAPI),
-        nameof(NetworkingAPI)
-    })]
+    [BepInPlugin("com.Viliger.TrickOrTreat", "TrickOrTreat", "1.1.0")]
+    [BepInDependency(R2API.LanguageAPI.PluginGUID)]
+    [BepInDependency(R2API.Networking.NetworkingAPI.PluginGUID)]
+    [BepInDependency(R2API.SoundAPI.PluginGUID)]
+    [BepInDependency(R2API.PrefabAPI.PluginGUID)]
     public class TrickOrTreatPlugin : BaseUnityPlugin
     {
         public static PluginInfo PInfo;
 
         private GameObject candyBucketPrefab;
+
+        public static ConfigEntry<bool> EnableAlways;
 
         // thanks KomradeSpectre
         public static Dictionary<string, string> ShaderLookup = new Dictionary<string, string>()
@@ -38,7 +38,9 @@ namespace RoR2_TrickOrTreat
 
         private void Awake()
         {
-            if (System.DateTime.Now.Month != 10)
+            EnableAlways = Config.Bind<bool>("Candy Bucket", "Always Enabled", false, "Enables Candy Bucket for entire year and not just October.");
+
+            if (System.DateTime.Now.Month != 10 && !EnableAlways.Value)
             {
                 return;
             }
@@ -56,7 +58,10 @@ namespace RoR2_TrickOrTreat
 
         private void LoadSoundBanks()
         {
-            using (FileStream fsSource = new FileStream(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(TrickOrTreatPlugin.PInfo.Location), "Soundbanks", "TrickOrTreat.bnk"), FileMode.Open, FileAccess.Read))
+            using (FileStream fsSource = new FileStream(
+                System.IO.Path.Combine(System.IO.Path.GetDirectoryName(TrickOrTreatPlugin.PInfo.Location), "Soundbanks", "TrickOrTreat.bnk"), 
+                FileMode.Open, 
+                FileAccess.Read))
             {
                 byte[] bytes = new byte[fsSource.Length];
                 fsSource.Read(bytes, 0, bytes.Length);

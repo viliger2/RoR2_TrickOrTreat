@@ -6,6 +6,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3673881719	Volume_SFX			\Default Work Unit\Volume_SFX	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	516017385	cheer	E:\Projects\RoR2_TrickOrTreat\RoR2_TrickOrTreatWWise\.cache\Windows\SFX\cheer_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\ChildrenSounds\cheer		44054
-	653312351	trick or treat	E:\Projects\RoR2_TrickOrTreat\RoR2_TrickOrTreatWWise\.cache\Windows\SFX\trick or treat,wav_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\ChildrenSounds\trick or treat		17349
+	516017385	cheer	F:\Projects\RoR2\RoR2_TrickOrTreat\RoR2_TrickOrTreatWWise\.cache\Windows\SFX\cheer_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\ChildrenSounds\cheer		44078
+	653312351	trick or treat	F:\Projects\RoR2\RoR2_TrickOrTreat\RoR2_TrickOrTreatWWise\.cache\Windows\SFX\trick or treat,wav_8E324C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Master Mixer\SFX Mixer\ChildrenSounds\trick or treat		17373
 
